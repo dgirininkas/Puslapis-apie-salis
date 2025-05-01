@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <link rel="stylesheet" type="text/css" href="cssmenu.css">
+    <link rel="stylesheet" type="text/css" href="bendras_dizainas.css">
+    <title>Menucool Css Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <style>
+        body {
+            margin: 0;
+            background: transparent;
+            font-family: Arial, sans-serif;
+        }
+        #menuDemo { 
+            text-align: center; 
+            padding: 30px 8px; 
+        }
+        
+        /* Image float styling */
+        img {
+            margin: 10px;
+        }
+
+        img.left {
+            float: left;
+            margin-right: 15px;
+        }
+
+        img.right {
+            float: right;
+            margin-left: 15px;
+        }
+
+        img.center {
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* Dropdown Menu styling */
+        #cssmenu ul {
+            list-style: none;
+            padding: 0;
+        }
+        #cssmenu > ul > li {
+            display: inline-block;
+            position: relative;
+        }
+        #cssmenu .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #cssmenu > ul > li:hover .dropdown {
+            display: block;
+        }
+        #cssmenu > ul > li > span {
+            cursor: pointer;
+        }
+
+        .clm {
+            display: inline-block;
+            width: 30%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menuDemo">
+    <!--start CssMenu-->
+    <div id="cssmenu">
+        <ul>
+            <li>
+                <span>Puslapio pradžia <i class="arrow"></i></span>
+                <ul class="dropdown">
+                    <li><a href="#">Informacija apie puslapį</a></li>
+                    <li><a href="#">Autorinės teisės</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Šalys <i class="arrow"></i></span>
+                <ul class="dropdown">
+                    <li><a href="#">Filipinai</a></li>
+                    <li><a href="#">Kolumbija</a></li>
+                    <li><a href="#">Namibija</a></li>
+                    <li><a href="#">Tailandas</a></li>
+                </ul>
+            </li>
+            <!-- Removed Blog Page -->
+            <li>
+                <a href="#">Atsiliepimai</a>
+            </li>
+        </ul>
+    </div>
+    <!--end CssMenu-->
+</div>
+
+</body>
